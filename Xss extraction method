@@ -1,0 +1,124 @@
+You can use this methods to get xss popup's if you are not able to get in traditional ways. 
+
+
+
+
+---------------------------------------------------------------------------------------------------
+1)
+
+how to bypass email form 
+
+go to this website for validating the email
+
+https://sphinx.mythic-beasts.com/~pdw/cgi-bin/emailvalidate
+
+select our payload and input here and balance the payload until we get the output as "email valid"\
+example  : "><svg/onload=confirm(1)>"@x.y
+
+so when we add @x.y it is getting balanced which act as domain.com
+
+
+-----------------------------------------------------------------------------------------------------
+2) xss in request headers
+
+first intercept the GET request and right click and click "change request method"
+it will change from GET to POST
+add new referer header and in header input "https://google.com"
+if it get reflected in response enter q parameter 
+eg : https://google.com/?q=hello123
+
+balance the payload and try to input the payload and if its getting reflected iots working..
+
+
+
+------------------------------------------------------------------------------------------------------
+
+3 xss bypass base64 encoding
+
+ input payload to the input field and intercept it in burp
+ if you see encoded input where your payload is there then you can decode it by smart decode 
+ and try to replace the input with your encoded to decoded values 
+ if there is not sanitization for that then it will work 
+
+ and show popup
+
+
+ -------------------------------------------------------------------------------------------------------
+
+ 4  if payload like <script>alert(1)</script>
+    or <img src=x onerror=confirm(1)> is not working 
+
+    you can try somthing for : '- confirm(1337)-'
+
+    this payload will bypass many 
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+ 5  Xss by using spider
+
+ if you dont get any input parameter you can use spider tool in burp to find xss injectable point
+
+ you can input the payload and see its response
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+6  xss bypass right click disable 
+
+check the url and replace the parameter to something else and see if its reflectin 
+if its reflecting input the payload to see if its working
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+7 exploitation of blind xss
+
+use xss hunter for detecting blind xss which will trigger later in its domain
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+8 DOM xss
+
+ find for this vlaues in souce code to check if its exploitable 
+
+ source list 
+
+ document.URL
+ document.referrer
+ location
+ location.href
+ location.search
+ location.pathname
+
+ sink list 
+
+ eval 
+ setTimeout
+ setInterval
+ document.write
+ element.innerHTML
+
+
+ if you find any of these endpoints try to include it in the url and try to inject it 
+
+
+
+
+ 
+ 
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
